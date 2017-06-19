@@ -1,0 +1,12 @@
+Device ID: Test-IDFM8-M8-1
+  IP address: 192.168.10.90
+Device ID: Test-IDFU3-U3-1
+  IP address: 192.168.10.150
+Device ID: Test-IDFM5-M5-1
+  IP address: 192.168.10.100
+Device ID: Test-IDFT2-T2-1
+  IP address: 192.168.10.160
+Device ID: Test-IDFM4-M4-1
+  IP address: 192.168.10.70
+Device ID: Test-IDFL_DataRmL-1
+  IP address: 192.168.10.60
