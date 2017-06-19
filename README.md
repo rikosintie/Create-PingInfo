@@ -8,10 +8,10 @@ I use it during core switch cutovers to make sure that all servers/switches/devi
 
 **Usage**:
 
-The script takes the output from a "show cdp neighbor detail | i Dev|IP" and turns it into the strings needed
+The script takes the output from a "show cdp neighbor detail | i Dev|IP add" and turns it into the strings needed
 by PingInfoView.
 
-Exmaple of show cdp neighbor detail | i Dev|IP. Save this in a file called pinginfo.txt.
+Exmaple of show cdp neighbor detail | i Dev|IP add. Save this in a file called pinginfo.txt.
 ```
 Device ID: Test-IDFM8-M8-1
   IP address: 192.168.10.90
