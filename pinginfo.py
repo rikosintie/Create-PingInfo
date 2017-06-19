@@ -36,6 +36,6 @@ while counter <= items:
 	IPaddress = IPaddress.strip('\n')
 #print the information needed to create the interface description
 	print(IPaddress + hostname)
-#increment the counter by two to jump to the next hostname line
-	counter = counter + 2
+#increment the counter by three to jump to the next hostname line
+	counter = counter + 3
 print()
