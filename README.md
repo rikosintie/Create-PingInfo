@@ -6,10 +6,11 @@ allows you to ping multiple hosts at one time. It is a really great tool.
 
 I use it during core switch cutovers to make sure that all servers/switches/devices are up after the cutover. 
 
-This script takes the output from a "show cdp neighbor detail | i Dev|IP" and turns it into the strings needed
+Usage:
+The script takes the output from a "show cdp neighbor detail | i Dev|IP" and turns it into the strings needed
 by PingInfoView.
 
-Exmaple of show cdp neighbor detail | i Dev|IP
+Exmaple of show cdp neighbor detail | i Dev|IP. Save this in a file called pinginfo.txt.
 ```
 Device ID: Test-IDFM8-M8-1
   IP address: 192.168.10.90
