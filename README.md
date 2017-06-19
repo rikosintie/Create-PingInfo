@@ -6,7 +6,8 @@ allows you to ping multiple hosts at one time. It is a really great tool.
 
 I use it during core switch cutovers to make sure that all servers/switches/devices are up after the cutover. 
 
-Usage:
+**Usage**:
+
 The script takes the output from a "show cdp neighbor detail | i Dev|IP" and turns it into the strings needed
 by PingInfoView.
 
