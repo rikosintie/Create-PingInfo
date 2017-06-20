@@ -15,7 +15,7 @@ f.close
 items = len(listname)-1
 #initalize the loop counter
 counter = 0
-while counter <= items:
+while counter < items:
 #read in the first hostname line
 	hostname = listname[counter]
 #remove the Device ID: from the hostname line.
