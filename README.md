@@ -11,12 +11,19 @@ allows you to ping multiple hosts at one time. It is a really great tool.
 I use it during core switch cutovers to make sure that all servers/switches/devices are up after the cutover. To manually create the list of switches at a large site is time consuming but this script will do it in a second.
 
 **Usage**:
+
 Note: Occasionlly I have seen a switch return one IP address instead of two for a switch. Rerunning the show command usually corrects the issue.
 
 The script takes the output from a "show cdp neighbor detail | i Dev|IP a" and turns it into the input needed
 by PingInfoView.
 
-Exmaple of show cdp neighbor detail | i Dev|IP add. Save this in a file called pinginfo.txt.
+On Windows 'py pinginfo.py'
+
+On Linux `python3 pinginfo.py`
+
+Exmaple of `show cdp neighbor detail | i Dev|IP add` 
+
+Save this in a file called pinginfo.txt.
 ```
 Device ID: Test-IDFM-M1-SW01
   IP address: 10.131.3.112
