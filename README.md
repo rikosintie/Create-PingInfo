@@ -1,14 +1,19 @@
 # Create-PingInfo
-Create strings to be used with Nirsoft.net PingInfoView from a Cisco show cdp ne det output
+Takes the output from `show cdp ne det | i Dev|IP a` from a core switchand returns a sorted list of IP Address and hostnames of the CDP neighbors.
+
+This is useful when you show up at a customer site you aren't familiar with and need to log into several edge switches. Instead of having to look through the raw output of the switch you get a consolidated list with just an IP address and hostname.
+
+The output is formatted to be work with Nirsoft.net's PingInfoView.
 
 PingInfoView is a free tool for Windows from [Nirsoft](http://www.nirsoft.net/utils/multiple_ping_tool.html) that
 allows you to ping multiple hosts at one time. It is a really great tool.
 
-I use it during core switch cutovers to make sure that all servers/switches/devices are up after the cutover. 
+I use it during core switch cutovers to make sure that all servers/switches/devices are up after the cutover. To manually create the list of switches at a large site is time consuming but this script will do it in a second.
 
 **Usage**:
+Note: Occasionlly I have seen a switch return one IP address instead of two for a switch. Rerunning the show command usually corrects the issue.
 
-The script takes the output from a "show cdp neighbor detail | i Dev|IP add" and turns it into the strings needed
+The script takes the output from a "show cdp neighbor detail | i Dev|IP a" and turns it into the input needed
 by PingInfoView.
 
 Exmaple of show cdp neighbor detail | i Dev|IP add. Save this in a file called pinginfo.txt.
@@ -39,4 +44,4 @@ mhubbard@1S1K-SYS76:~/Dropbox/Python/Scripts$ python3 pinginfo.py
  192.168.10.109 Test-IDFU-U3-SW01
  ```
 
-Either save the output to a file for future use or click File, Ping Options and paste it in. 
+for use with PingInfoView either save the output to a file for future use or click File, Ping Options and paste it in. 
