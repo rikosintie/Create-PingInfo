@@ -1,5 +1,5 @@
 # Create-PingInfo
-Takes the output from `show cdp ne det | i Dev|IP a` from a core switchand returns a sorted list of IP Address and hostnames of the CDP neighbors.
+Takes the output from `show cdp ne det | i Dev|IP a` from a core switch and returns a sorted list of IP Address and hostnames of the CDP neighbors.
 
 This is useful when you show up at a customer site you aren't familiar with and need to log into several edge switches. Instead of having to look through the raw output of the switch you get a consolidated list with just an IP address and hostname.
 
@@ -21,7 +21,7 @@ On Windows `py pinginfo.py`
 
 On Linux `python3 pinginfo.py`
 
-Exmaple of `show cdp neighbor detail | i Dev|IP add` 
+Exmaple of `show cdp neighbor detail | i Dev|IP a` 
 
 ```
 Device ID: Test-IDFM-M1-SW01
