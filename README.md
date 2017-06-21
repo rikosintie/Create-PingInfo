@@ -23,7 +23,6 @@ On Linux `python3 pinginfo.py`
 
 Exmaple of `show cdp neighbor detail | i Dev|IP add` 
 
-Save this in a file called pinginfo.txt.
 ```
 Device ID: Test-IDFM-M1-SW01
   IP address: 10.131.3.112
@@ -51,4 +50,4 @@ mhubbard@1S1K-SYS76:~/Dropbox/Python/Scripts$ python3 pinginfo.py
  192.168.10.109 Test-IDFU-U3-SW01
  ```
 
-for use with PingInfoView either save the output to a file for future use or click File, Ping Options and paste it in. 
+for use with PingInfoView, either save the output to a file for future use or click File, Ping Options and paste it in. 
