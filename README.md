@@ -14,10 +14,10 @@ I use it during core switch cutovers to make sure that all servers/switches/devi
 
 Note: Occasionlly I have seen a switch return one IP address instead of two for a switch. Rerunning the show command usually corrects the issue.
 
-The script takes the output from a "show cdp neighbor detail | i Dev|IP a" and turns it into the input needed
+The script takes the output from a `show cdp neighbor detail | i Dev|IP a` and turns it into the input needed
 by PingInfoView.
 
-On Windows 'py pinginfo.py'
+On Windows `py pinginfo.py`
 
 On Linux `python3 pinginfo.py`
 
