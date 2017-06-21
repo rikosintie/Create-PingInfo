@@ -5,7 +5,7 @@ This is useful when you show up at a customer site you aren't familiar with and 
 
 The output is formatted to work with Nirsoft.net's PingInfoView.
 
-PingInfoView is a free tool for Windows from [Nirsoft](http://www.nirsoft.net/utils/multiple_ping_tool.html) that
+PingInfoView is a free tool for Windows from [Nirsoft PingInfoView](http://www.nirsoft.net/utils/multiple_ping_tool.html) that
 allows you to ping multiple hosts at one time. It is a really great tool.
 
 I use it during core switch cutovers to make sure that all servers/switches/devices are up after the cutover. To manually create the list of switches at a large site is time consuming but this script will do it in a second.
