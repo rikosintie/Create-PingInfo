@@ -21,8 +21,8 @@ On Windows `py pinginfo.py`
 
 On Linux `python3 pinginfo.py`
 
-Exmaple of `show cdp neighbor detail | i Dev|IP a` 
-
+Exmaple of `show cdp neighbor detail | i Dev|IP a` on a newer IOS
+In this case enter 2 when prompted by the script
 ```
 Device ID: Test-IDFM-M1-SW01
   IP address: 10.131.3.112
@@ -40,14 +40,25 @@ Device ID: Test-IDFU-U3-SW01
   IP address: 10.131.3.109
   IP address: 10.131.3.109
 ```  
-Script output:
+Older IOS versions will display this. In this case enter 1 when prompted by the script.
+```
+Device ID: test-MDF1
+  IP address: 10.52.1.10
+Device ID: test-IDF1
+  IP address: 10.52.1.20
+Device ID: test_4-Post
+  IP address: 10.52.1.30
+```
+
+Script output from an older IOS version:
 ```
 mhubbard@1S1K-SYS76:~/Dropbox/Python/Scripts$ python3 pinginfo.py
- 192.168.10.112 Test-IDFM-M1-SW01
- 192.168.10.115 Test-IDFSE-SE1-SW01
- 192.168.10.117 Test-IDFZ-Z3-SW01
- 192.168.10.108 Test-IDFV-V3-SW01
- 192.168.10.109 Test-IDFU-U3-SW01
+
+Enter the number of IP addresses per switch 1 or 2: 1
+
+10.52.1.10 test-MDF1
+10.52.1.20 test-IDF1
+10.52.1.30 test_4-Post
  ```
 
 for use with PingInfoView, either save the output to a file for future use or click File, Ping Options and paste it in. 
