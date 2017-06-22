@@ -41,11 +41,12 @@ while True:
   except ValueError:
     break
 items = len(listname)
+#Determine if the output has 1 or 2 IP address statements.
 
-#some switches output two "IP address" lines and some output one.
-#enter the number of IP address lines per switch
-numberofIPs = int(input('Enter the number of IP addresses per switch 1 or 2: '))
-numberofIPs = numberofIPs + 1
+if listname[2].find('IP') == 2:
+	numberofIPs = 3
+else:
+	numberofIPs = 2
 
 #Build the end condition for the while loop.
 items = len(listname)-1
