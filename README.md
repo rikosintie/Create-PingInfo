@@ -21,7 +21,7 @@ On Windows `py pinginfo.py`
 
 On Linux `python3 pinginfo.py`
 
-Exmaple of `show cdp neighbor detail | i Dev|IP a` on a newer IOS
+Example of `show cdp neighbor detail | i Dev|IP a` on a newer IOS. 
 In this case enter 2 when prompted by the script
 ```
 Device ID: Test-IDFM-M1-SW01
