@@ -1,6 +1,6 @@
 '''
 read a file 'pinginfo.txt' containing the output of sh cdp ne det | i Dev|IP a
-It should look like this (enter 1 when prompted):
+It should look like this:
 
 Device ID: test-MDF1
   IP address: 10.52.1.10
@@ -9,7 +9,7 @@ Device ID: test-MDF1
 Device ID: test_IDF2_Conf
   IP address: 10.52.1.30
 
-or this (enter 2 when prompted)
+or this:
 
 Device ID: SBHS-IDFL-LDAT-SW01
   IP address: 10.131.3.116
