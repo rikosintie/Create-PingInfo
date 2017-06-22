@@ -22,7 +22,6 @@ On Windows `py pinginfo.py`
 On Linux `python3 pinginfo.py`
 
 Example of `show cdp neighbor detail | i Dev|IP a` on a newer IOS. 
-In this case enter 2 when prompted by the script
 ```
 Device ID: Test-IDFM-M1-SW01
   IP address: 10.131.3.112
@@ -40,7 +39,7 @@ Device ID: Test-IDFU-U3-SW01
   IP address: 10.131.3.109
   IP address: 10.131.3.109
 ```  
-Older IOS versions will display this. In this case enter 1 when prompted by the script.
+Older IOS versions will display this. 
 ```
 Device ID: test-MDF1
   IP address: 10.52.1.10
@@ -49,12 +48,9 @@ Device ID: test-IDF1
 Device ID: test_4-Post
   IP address: 10.52.1.30
 ```
-
-Script output from an older IOS version:
+The script will figure out which format the output is in and work either way.
 ```
 mhubbard@1S1K-SYS76:~/Dropbox/Python/Scripts$ python3 pinginfo.py
-
-Enter the number of IP addresses per switch 1 or 2: 1
 
 10.52.1.10 test-MDF1
 10.52.1.20 test-IDF1
