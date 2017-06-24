@@ -26,6 +26,13 @@ Device ID: S-131-IDFZ3-Z3-1
 Print out the code needed to create the pinginfo file in the format: 
 ip address hostname
 '''
+def remove_duplicates(x):
+    a = []
+    for i in x:
+        if i not in a:
+            a.append(i)
+    return a
+
 #create a space between the command line and the output
 print()
 #create a blank list to accept each line in the file
@@ -79,6 +86,10 @@ while counter < items:
 #increment the counter by three to jump to the next hostname line
     counter = counter + numberofIPs
 print()
+#sort by IP address
 sItems.sort()
+#remove duplicates
+sItems = remove_duplicates(sItems)
+#print results
 for s in sItems:
     print(s)
