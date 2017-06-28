@@ -48,12 +48,14 @@ while True:
   except ValueError:
     break
 items = len(listname)
-#Determine if the output has 1 or 2 IP address statements.
-
-if listname[2].find('IP') == 2:
-	numberofIPs = 3
-else:
+'''
+Determine if the output has 1 or 2 IP address statements.
+If the third item in the list doesn't have IP in it then there is one IP address line.
+'''
+if listname[2].find('IP') == -1:
 	numberofIPs = 2
+else:
+	numberofIPs = 3
 
 #Build the end condition for the while loop.
 items = len(listname)-1
@@ -71,21 +73,26 @@ while counter < items:
     hostname = hostname.strip('\n')
     #The interface is on the next line
     IPaddress = listname[counter + 1]
-    #Find the comma in IP Address line
+    #Find the colon in IP Address line
     colon = IPaddress.find(':')
     colon = colon + 1
-    #strip the comma out
+    #strip the colon out
     IPaddress = IPaddress[colon:]
     #delete the colon
     IPaddress = IPaddress.replace(':','')
     IPaddress = IPaddress.strip('\n')
-    #print the information needed to create the interface description
+
+#A Nexus doesn't put a space between the Device ID and hostname.
+#If no space exists add one.
+    if hostname.find(' ') == -1:
+        hostname = ' ' + hostname
+#create the output
     temp = IPaddress + hostname
-#    print(temp)
+ #   print(temp)
     sItems.append(temp)
-#increment the counter by three to jump to the next hostname line
+#increment the counter to jump to the next hostname line
     counter = counter + numberofIPs
-print()
+#
 #sort by IP address
 sItems.sort()
 #remove duplicates
@@ -93,3 +100,4 @@ sItems = remove_duplicates(sItems)
 #print results
 for s in sItems:
     print(s)
+print()
